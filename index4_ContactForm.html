@@ -1,0 +1,253 @@
+<!Doctype html>
+<html>
+<head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body{background: url(homepage_trial_background.jpg);
+    height: 190px;  background-color:rgb(98, 153, 236);
+  }
+  header{width:700px; background-color:#9966; text-align:center;margin:auto;padding:10px; height:70px}
+  footer{ clear:both;background-color:rgb(145, 142, 142);text-align: center ; margin-bottom:110px; padding-top: 11px;  margin-top:30px;
+  border:3px solid   #4CAF50; height: 370px;
+ }
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#000;
+    height: 47px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a.active {
+  background-color:lightgray;
+
+    
+}
+
+li a:hover {
+  background-color:rgb(34, 33, 33);
+}
+
+
+.fa {
+  padding: 0px;
+  padding-bottom:0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook{
+  background:#3b5998;
+  color: white;
+  
+}
+.fa-intsagram{
+  background: #881212;
+  color:white;
+}
+.fa-twitter{
+  background: #125688;
+  color:white;
+}
+#ContF{
+  border:3px solid   #4CAF50;
+  height: 510px;
+}
+h2{
+  color:red;
+}
+h3{
+  color:white;
+}
+.box{
+  background-image: url(maxresdefault.jpg);
+}
+@media (max-width:768px){
+  #content{
+  width:80%;
+}
+.center{width:100%}
+header{width:100%}
+form{width:50%}
+header{width:36%}
+ul{width:100%;
+ height:24%;
+}
+img{ width:20%}
+footer{width:100%;
+  height:68%;
+       }
+.img1{width:100%}
+#ContF{height:100;
+     width:50%;
+}
+
+
+ }
+ @media (max-width:640px){
+  #content{
+  width:80%;
+}
+.center{width:50%}
+header{width:100%}
+form{width:50%}
+header{width:100%}
+nav{width:100%}
+img{ width:20%}
+footer{width:100%}
+.img1{width:100%}
+
+ }
+ @media (max-width:450px){
+ul{
+  height: 80%;  
+}
+
+#content{
+  width:80%;
+}
+#content{
+  width:80%;
+}
+.center{width:100%}
+header{width:100%}
+form{width:50%}
+header{width:36%}
+ul{width:100%;
+ height:24%;
+}
+img{ width:20%}
+footer{width:100%;
+  height:68%;
+       }
+.img1{width:100%}
+#ContF{height:100;
+     width:50%;
+}
+
+ }
+
+
+
+
+</style>
+
+
+</head>
+<body>
+  
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a class="active" class="index4_ContactForm.html" href="#news">Contact Me</a></li>
+        <li><a   href="FirstTry.html">My Projects</a></li>
+      </ul>
+      
+    <header> 
+        <h3>  Contact Me          </h3>    
+              </header>
+
+    <div id="ContF" class ="box" onsubmit=" return recaptcha_callback();" >  
+  
+       <form id="Contact_Form"    >
+      
+   <h4>Name       :   </h4> 
+   <input type="text"name="name" size="4"  placeholder="enter name"  maxlength="20"  class="center" id="name"   > <br>
+ 
+   <h4>Email      :   </h4>
+   <input type="email" email= "email" size="4"  placeholder="enter email" maxlength="40" class ="center" id="email">  <br>
+  <h4>Message:     </h4>
+  
+   <textarea name  ="message" rows=10 cols=80  class="center"placeholder="Type message " id="message">    
+     
+  </textarea>
+
+
+
+  <input type=submit Name =cmdsubmit value ="send"  class ="center" disabled  id="submit">
+
+
+       </form>
+     
+  </div>
+  <div  class="g-recaptcha" data-sitekey="6LcYerAUAAAAAM7bU6XnD4PHC-ulrwPpEFGxu_xs" class="center" 
+  data-callback="recaptcha_callback"></div>
+     <div id="g-recaptcha-error"   ></div>
+
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+     <script>
+
+   function recaptcha_callback(){
+var submitbutton= document.querySelector('#submit');
+submitbutton.removeAttribute('disabled');
+submitbutton.style.cursor='pointer';
+   } 
+    </script>
+
+
+
+  <footer> 
+    <h3  >  or  </h3>
+    <a href="https://facebook.com" class="fa fa-facebook"></a>  
+    <span class="tiny">
+     <h4>Sesethu Peyi : on facebook</h4>  
+ </span>
+ 
+    <a href="https://www.instagram.com/instagram/" class="fa fa-instagram"></a>
+    <span class="tiny">
+     <h4>sesethu532 : on instagram</h4> 
+ 
+ </span>
+ 
+    <a href="https://twitter.com/login" class="fa fa-twitter"></a>
+    <span class="tiny">
+     <h4>Sesethu : on twitter</h4>  
+ 
+ </span>
+
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>   
+ <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+           <script src="cntact.js"></script>
+           
+</body>
+
+</html>
